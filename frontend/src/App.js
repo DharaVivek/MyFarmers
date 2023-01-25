@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import ProductScreen from './screens/ProductScreen';
 import HomeScreen from './screens/HomeScreen';
 import Navbar from 'react-bootstrap/Navbar';
