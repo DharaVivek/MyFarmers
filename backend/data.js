@@ -30,7 +30,7 @@ const data = {
         category: 'rice',
         image: '/images/p3.jpeg', 
         price: 1000,
-        countInStock: 10,
+        countInStock: 0,
         farmerName: 'rice-by-farmer1',
         rating: 4.5,
         numReviews: 10,
