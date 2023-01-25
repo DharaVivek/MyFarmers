@@ -8,11 +8,31 @@ body {
 }
 
 header {
-  background-color: #ffe88e;
+  background-color: #ffe88e ;
   padding: 1rem;
 }
 header a {
   color: #000000;
   font-weight: bold;
   text-decoration: none;
+}
+main {
+  padding: 1rem;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 1px #ffe88e  solid;
+  margin: 2rem;
+}
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+.product-info {
+  padding: 1rem;
 }
