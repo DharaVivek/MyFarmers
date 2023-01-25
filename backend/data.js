@@ -1,6 +1,7 @@
 const data = {
     products: [
       {
+        _id: '1',
         name: 'rice polished',
         slug: 'rice-polished1',
         category: 'rice',
@@ -13,6 +14,7 @@ const data = {
         description: 'high quality polished rice',
       },
       {
+        _id: '2',
         name: 'wheet',
         slug: 'wheet1',
         category: 'wheet',
@@ -25,6 +27,7 @@ const data = {
         description: 'high quality wheet',
       },
       {
+        _id: '3',
         name: 'rice polished',
         slug: 'rice-polished',
         category: 'rice',
@@ -37,6 +40,7 @@ const data = {
         description: 'high quality polished rice',
       },
       {
+        _id: '4',
         name: 'wheet',
         slug: 'wheet',
         category: 'wheet',
