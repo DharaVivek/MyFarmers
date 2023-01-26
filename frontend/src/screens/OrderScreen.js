@@ -152,10 +152,10 @@ function onError(err) {
               </Card.Text>
               {order.isDelivered ? (
                 <MessageBox variant="success">
-                  Delivered at {order.deliveredAt}
+                  Contacted
                 </MessageBox>
               ) : (
-                <MessageBox variant="danger">Not Delivered</MessageBox>
+                <MessageBox variant="danger">Not Contacted</MessageBox>
               )}
             </Card.Body>
           </Card>
