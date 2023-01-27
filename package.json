@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"cd backend && npm install  && cd ../frontend && npm install && npm run build --force",
-    "start":"node backend/server.js",
+    "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build --force",
+    "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/DharaVivek/MyFarmers/issues"
   },
-  "homepage": "https://github.com/DharaVivek/MyFarmers#readme"
+  "homepage": "https://github.com/DharaVivek/MyFarmers#readme",
+  "dependencies": {
+    "framer-motion": "^8.5.3"
+  }
 }
