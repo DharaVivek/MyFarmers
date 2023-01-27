@@ -127,7 +127,7 @@ function onError(err) {
     };
 
     if (!userInfo) {
-      return navigate('/login');
+      return navigate('/signin');
     }
     if (
       !order._id ||
