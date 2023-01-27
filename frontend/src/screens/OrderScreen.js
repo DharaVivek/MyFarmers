@@ -31,6 +31,7 @@ function reducer(state, action) {
         return { ...state, loadingPay: false };
       case 'PAY_RESET':
         return { ...state, loadingPay: false, successPay: false };
+
         case 'DELIVER_REQUEST':
           return { ...state, loadingDeliver: true };
         case 'DELIVER_SUCCESS':
@@ -44,7 +45,7 @@ function reducer(state, action) {
         successDeliver: false,
       };
         default:
-      return state;
+            return state;
   }
 }
 export default function OrderScreen() {
@@ -136,7 +137,6 @@ function onError(err) {
       (order._id && order._id !== orderId)
     ) {
       fetchOrder();
-    
     if (successPay) {
       dispatch({ type: 'PAY_RESET' });
     }
@@ -145,7 +145,7 @@ function onError(err) {
     }
   } else {
     const loadPaypalScript = async () => {
-      const { data: clientId } = await axios.get('/api/keys/paypal', {
+      const { data: clientId } = await axios.get(`/api/keys/paypal`, {
         headers: { authorization: `Bearer ${userInfo.token}` },
       });
       paypalDispatch({
@@ -186,6 +186,7 @@ async function deliverOrderHandler() {
     dispatch({ type: 'DELIVER_FAIL' });
   }
 }
+
   return loading ? (
     <LoadingBox></LoadingBox>
   ) : error ? (
@@ -209,7 +210,7 @@ async function deliverOrderHandler() {
               </Card.Text>
               {order.isDelivered ? (
                 <MessageBox variant="success">
-                  Contacted
+                  Contacted at {order.deliveredAt}
                 </MessageBox>
               ) : (
                 <MessageBox variant="danger">Not Contacted</MessageBox>

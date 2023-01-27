@@ -152,13 +152,13 @@ function App() {
                 }
               ></Route>
               <Route
-                path="/admin/orders"
+                path="/admin/order"
                 element={
                   <AdminRoute>
                     <OrderListScreen />
                   </AdminRoute>
                 }
-              ></Route>
+              />
               <Route
                 path="/admin/products"
                 element={

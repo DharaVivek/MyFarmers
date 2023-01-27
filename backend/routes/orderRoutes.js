@@ -4,9 +4,7 @@ import Order from '../models/orderModel.js';
 import User from '../models/userModel.js';
 import Product from '../models/productModel.js';
 import { isAuth, isAdmin } from '../utils.js';
-
 const orderRouter = express.Router();
-
 orderRouter.get(
   '/',
   isAuth,
@@ -16,7 +14,6 @@ orderRouter.get(
     res.send(orders);
   })
 );
-
 orderRouter.post(
   '/',
   isAuth,
@@ -31,12 +28,10 @@ orderRouter.post(
       totalPrice: req.body.totalPrice,
       user: req.user._id,
     });
-
     const order = await newOrder.save();
     res.status(201).send({ message: 'New Order Created', order });
   })
 );
-
 orderRouter.get(
   '/summary',
   isAuth,
@@ -80,7 +75,6 @@ orderRouter.get(
     res.send({ users, orders, dailyOrders, productCategories });
   })
 );
-
 orderRouter.get(
   '/mine',
   isAuth,
@@ -89,7 +83,6 @@ orderRouter.get(
     res.send(orders);
   })
 );
-
 orderRouter.get(
   '/:id',
   isAuth,
@@ -102,7 +95,6 @@ orderRouter.get(
     }
   })
 );
-
 orderRouter.put(
   '/:id/deliver',
   isAuth,
@@ -118,7 +110,6 @@ orderRouter.put(
     }
   })
 );
-
 orderRouter.put(
   '/:id/pay',
   isAuth,
@@ -133,7 +124,6 @@ orderRouter.put(
         update_time: req.body.update_time,
         email_address: req.body.email_address,
       };
-
       const updatedOrder = await order.save();
       res.send({ message: 'Order Paid', order: updatedOrder });
     } else {
@@ -142,5 +132,19 @@ orderRouter.put(
   })
 );
 
+orderRouter.delete(
+  '/:id',
+  isAuth,
+  isAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const order = await Order.findById(req.params.id);
+    if (order) {
+      await order.remove();
+      res.send({ message: 'Order Deleted' });
+    } else {
+      res.status(404).send({ message: 'Order Not Found' });
+    }
+  })
+);
 
 export default orderRouter;
