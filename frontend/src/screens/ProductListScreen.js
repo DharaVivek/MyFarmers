@@ -173,8 +173,8 @@ export default function ProductListScreen() {
               <tr>
                 <th>ID</th>
                 <th>NAME</th>
-                <th>PRICE</th>
-                <th>CATEGORY</th>
+                <th>PRICE per ton</th>
+                <th>CROP NAME</th>
                 <th>Farmer Name</th>
                 <th>ACTIONS</th>
               </tr>

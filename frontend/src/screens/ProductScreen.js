@@ -108,7 +108,7 @@ function ProductScreen() {
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <Row>
-                    <Col>Price:</Col>
+                    <Col>Price per ton:</Col>
                     <Col>₹{product.price}</Col>
                   </Row>
                 </ListGroup.Item>

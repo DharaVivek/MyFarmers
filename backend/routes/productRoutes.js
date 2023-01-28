@@ -23,7 +23,7 @@ productRouter.post(
       category: 'sample category',
       brand: 'sample brand',
       countInStock: 0,
-      rating: 0,
+      rating: 4.5,
       numReviews: 0,
       description: 'sample description',
     });
