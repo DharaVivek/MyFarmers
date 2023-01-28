@@ -68,7 +68,6 @@ function App() {
                       <LinkContainer to="/orderhistory">
                         <NavDropdown.Item>Order History</NavDropdown.Item>
                       </LinkContainer>
-                      <NavDropdown.Divider />
                       <Link
                         className="dropdown-item"
                         to="#signout"
@@ -93,9 +92,6 @@ function App() {
                       </LinkContainer>
                       <LinkContainer to="/admin/order">
                         <NavDropdown.Item>Orders</NavDropdown.Item>
-                      </LinkContainer>
-                      <LinkContainer to="/admin/user">
-                        <NavDropdown.Item>Users</NavDropdown.Item>
                       </LinkContainer>
                     </NavDropdown>
                   )}

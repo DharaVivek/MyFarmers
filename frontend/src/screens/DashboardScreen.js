@@ -68,7 +68,7 @@ export default function DashboardScreen() {
                           ? summary.users[0].numUsers
                           : 0}
                       </Card.Title>
-                      <Card.Text> Users</Card.Text>
+                      <Card.Text> Farmers</Card.Text>
                     </Card.Body>
                   </Card>
                 </Col>

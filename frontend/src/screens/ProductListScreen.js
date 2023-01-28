@@ -175,7 +175,7 @@ export default function ProductListScreen() {
                 <th>NAME</th>
                 <th>PRICE</th>
                 <th>CATEGORY</th>
-                <th>BRAND</th>
+                <th>Farmer Name</th>
                 <th>ACTIONS</th>
               </tr>
             </thead>
