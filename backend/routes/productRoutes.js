@@ -19,12 +19,12 @@ productRouter.post(
       name: 'sample name ' + Date.now(),
       slug: 'sample-name-' + Date.now(),
       image: '/images/p1.jpg',
-      price: 0,
+      price: 10000,
       category: 'sample category',
       brand: 'sample brand',
-      countInStock: 0,
+      countInStock: 5,
       rating: 4.5,
-      numReviews: 0,
+      numReviews: 2,
       description: 'sample description',
     });
     const product = await newProduct.save();
