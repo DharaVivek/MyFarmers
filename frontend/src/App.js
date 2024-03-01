@@ -47,7 +47,7 @@ function App() {
         <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>MyFarmer</Navbar.Brand>
+                <Navbar.Brand>AuTo-In</Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
@@ -88,7 +88,7 @@ function App() {
                         <NavDropdown.Item>Dashboard</NavDropdown.Item>
                       </LinkContainer>
                       <LinkContainer to="/admin/products">
-                        <NavDropdown.Item>Products</NavDropdown.Item>
+                        <NavDropdown.Item>Packages</NavDropdown.Item>
                       </LinkContainer>
                       <LinkContainer to="/admin/order">
                         <NavDropdown.Item>Orders</NavDropdown.Item>
