@@ -95,7 +95,7 @@ function ProductScreen() {
                 numReviews={product.numReviews}
               ></Rating>
             </ListGroup.Item>
-            <ListGroup.Item>Price per ton : ₹{product.price}</ListGroup.Item>
+            <ListGroup.Item>Price per 100 interviews : ₹{product.price}</ListGroup.Item>
             <ListGroup.Item>
               Description:
               <p>{product.description}</p>
