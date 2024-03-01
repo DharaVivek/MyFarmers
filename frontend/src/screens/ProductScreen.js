@@ -108,7 +108,7 @@ function ProductScreen() {
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <Row>
-                    <Col>Price per ton:</Col>
+                    <Col>Price :</Col>
                     <Col>₹{product.price}</Col>
                   </Row>
                 </ListGroup.Item>
@@ -117,7 +117,7 @@ function ProductScreen() {
                     <Col>Status:</Col>
                     <Col>
                       {product.countInStock > 0 ? (
-                        <Badge bg="success">In Stock</Badge>
+                        <Badge bg="success">Available</Badge>
                       ) : (
                         <Badge bg="danger">Unavailable</Badge>
                       )}
