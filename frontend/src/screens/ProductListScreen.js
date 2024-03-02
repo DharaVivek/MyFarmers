@@ -154,7 +154,7 @@ export default function ProductListScreen() {
         <Col className="col text-end">
           <div>
             <Button type="button" onClick={createHandler}>
-              Create Product
+              Create Package
             </Button>
           </div>
         </Col>
@@ -173,9 +173,9 @@ export default function ProductListScreen() {
               <tr>
                 <th>ID</th>
                 <th>NAME</th>
-                <th>PRICE per ton</th>
-                <th>CROP NAME</th>
-                <th>Farmer Name</th>
+                <th>PRICE</th>
+                <th>COMPANY TYPE</th>
+                <th>RECUITER NAME</th>
                 <th>ACTIONS</th>
               </tr>
             </thead>
