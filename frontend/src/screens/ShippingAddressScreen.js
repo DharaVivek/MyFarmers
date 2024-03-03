@@ -68,7 +68,7 @@ export default function ShippingAddressScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="address">
-            <Form.Label>Description and goals</Form.Label>
+            <Form.Label>Description ans goals</Form.Label>
             <Form.Control
               value={address}
               onChange={(e) => setAddress(e.target.value)}
