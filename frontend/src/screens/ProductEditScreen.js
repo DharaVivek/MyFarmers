@@ -142,9 +142,9 @@ export default function ProductEditScreen() {
   return (
     <Container className="small-container">
       <Helmet>
-        <title>Edit Package ${productId}</title>
+        <title>Edit Product ${productId}</title>
       </Helmet>
-      <h1>Edit Package {productId}</h1>
+      <h1>Edit Product {productId}</h1>
 
       {loading ? (
         <LoadingBox></LoadingBox>
@@ -169,7 +169,7 @@ export default function ProductEditScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="name">
-            <Form.Label>Price per 100 interviews</Form.Label>
+            <Form.Label>Price per ton</Form.Label>
             <Form.Control
               value={price}
               onChange={(e) => setPrice(e.target.value)}
@@ -183,7 +183,7 @@ export default function ProductEditScreen() {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="category">
-            <Form.Label>Category(Type)</Form.Label>
+            <Form.Label>Category(name of crop)</Form.Label>
             <Form.Control
               value={category}
               onChange={(e) => setCategory(e.target.value)}
@@ -191,7 +191,7 @@ export default function ProductEditScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="brand">
-            <Form.Label>Recruiter Name</Form.Label>
+            <Form.Label>Farmer Name</Form.Label>
             <Form.Control
               value={brand}
               onChange={(e) => setBrand(e.target.value)}
@@ -199,7 +199,7 @@ export default function ProductEditScreen() {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="countInStock">
-            <Form.Label>Stock</Form.Label>
+            <Form.Label>Stock in Tons</Form.Label>
             <Form.Control
               value={countInStock}
               onChange={(e) => setCountInStock(e.target.value)}
